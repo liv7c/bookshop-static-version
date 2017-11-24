@@ -3,6 +3,10 @@
   padding-bottom: 1.5rem;
   margin-top: 2.5rem;
 
+  &__text {
+    line-height: 1.5;
+  }
+
   &__map {
     margin: 2rem 0;
     width: 25rem;
@@ -16,10 +20,18 @@
   &__info {
     font-size: 1.7rem;
     line-height: 1.7;
-  }
 
-  &__text {
-    line-height: 1.5;
+    @mixin atSmall {
+      text-align: center;
+    }
+
+    @mixin atMedium {
+      text-align: left;
+    }
+
+    & > p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__terms {
@@ -32,5 +44,6 @@
   &__copyright {
     font-size: 1.3rem;
     color: #777;
+    text-align: center;
   }
 }

@@ -1,0 +1,8 @@
+.specialties {
+  &__feat_img {
+    @mixin atMedium {
+      position: relative;
+      top: -7px;
+    }
+  }
+}

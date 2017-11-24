@@ -6,9 +6,21 @@
       margin-top: 0;
     }
   }
+
   p {
     font-size: 1.7rem;
     line-height: 1.5;
+
+    &:first-child {
+      @mixin atMedium {
+        margin-top: 0;
+      }
+    }
+
+    @mixin atMedium {
+      line-height: 1.8;
+      /*max-width: 80%;*/
+    }
   }
 
   p a {

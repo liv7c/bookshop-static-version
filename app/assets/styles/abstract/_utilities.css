@@ -1,9 +1,11 @@
 .small-margin-bottom {
-  margin-bottom: 2rem;
+  @mixin atLarge {
+      margin-bottom: 5rem;
+  }
 }
 
 .small-margin-top-s {
-  margin-top: 2.5rem !important;
+  margin-top: 3rem !important;
 
   @mixin atSmall {
     margin-top: 0;
