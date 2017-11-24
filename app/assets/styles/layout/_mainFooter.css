@@ -1,0 +1,36 @@
+.footer {
+  background-color: $main-yellow;
+  padding-bottom: 1.5rem;
+  margin-top: 2.5rem;
+
+  &__map {
+    margin: 2rem 0;
+    width: 25rem;
+    height: 25rem;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: $main-grey;
+  }
+
+  &__info {
+    font-size: 1.7rem;
+    line-height: 1.7;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+
+  &__terms {
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__copyright {
+    font-size: 1.3rem;
+    color: #777;
+  }
+}

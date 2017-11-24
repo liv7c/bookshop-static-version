@@ -1,6 +1,10 @@
 .page-section {
   padding: 1.8rem 0;
 
+  &:not(:last-child) {
+    margin-top: 1rem;
+  }
+
   @mixin atMedium {
     padding: 4rem 0;
   }

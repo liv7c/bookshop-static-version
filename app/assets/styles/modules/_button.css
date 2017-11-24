@@ -1,0 +1,51 @@
+.button {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    transition: all .3s;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+
+  &--green-out {
+    &:link,
+    &:visited {
+      border: 1px solid $main-green;
+      color: $main-green;
+    }
+
+    &:hover,
+    &:focus {
+      color: #FFF;
+      background-color: $main-green;
+    }
+  }
+
+  &--blue-out {
+    &:link,
+    &:visited {
+      border: 1px solid $dark-blue;
+      color: $dark-blue;
+    }
+
+    &:hover,
+    &:focus {
+      color: #FFF;
+      background-color: $dark-blue;
+    }
+  }
+
+  &--center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
