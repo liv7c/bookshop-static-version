@@ -4,11 +4,16 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.7rem;
-    display: inline-block;
-    padding: 1rem 2rem;
+    display: block;
+    width: 90%;
+    padding: 1rem 1.5rem;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     transition: all .3s;
+
+    @mixin atMedium {
+      width: 30%;
+    }
   }
 
   &:active {
