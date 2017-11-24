@@ -12,6 +12,7 @@ body {
   font-family: 'Lato', Arial, sans-serif;
   color: $main-grey;
   font-size: 1.6rem;
+  background-color: #FEFEFE;
 }
 
 img {

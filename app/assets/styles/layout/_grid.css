@@ -2,7 +2,9 @@
   @mixin clearfix;
 
   &--margin-t {
-    margin-top: 4rem;
+    @mixin atMedium {
+      margin-top: 4rem;
+    }
   }
 
   @mixin atSmall {
