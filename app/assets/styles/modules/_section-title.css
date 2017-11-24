@@ -37,6 +37,10 @@
 
       @mixin atMedium {
         margin-right: 2rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        position: relative;
+        top: 2px;
       }
     }
 

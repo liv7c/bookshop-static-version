@@ -1,3 +1,140 @@
-.navigation {
-  display: none;
+.main-navigation {
+  position: relative;
+  min-height: 7.5rem;
+
+  @mixin atMedium {
+    min-height: 0;
+    margin-bottom: 3rem;
+  }
+
+  &__menu-icon {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    position: absolute;
+    top: 2rem;
+    right: 1.8rem;
+    text-align: center;
+    cursor: pointer;
+
+    @mixin atMedium {
+      display: none;
+    }
+
+    &__middle {
+      position: relative;
+      margin-top: 2.3rem;
+      left: 1px;
+      &,
+      &::before,
+      &::after {
+        display: inline-block;
+        width: 3rem;
+        height: 2px;
+        background-color: #777;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .2s ease;
+      }
+
+      &::before {
+        transform-origin: 0 0;
+        top: 1rem;
+      }
+
+      &::after {
+        transform-origin: 0 100%;
+        bottom: 1rem;
+      }
+    }
+
+    &--close-x {
+      .main-navigation__menu-icon__middle {
+        background: transparent;
+        transform-origin: center;
+
+        &::before {
+          transform: translateX(-50%) translateY(4px) rotate(-45deg) scale(1.25);
+        }
+
+        &::after {
+          transform: translateX(-50%) translateY(-2px) rotate(45deg) scale(1.25);
+        }
+      }
+    }
+
+  }
+
+  &__nav {
+    border-bottom: 1px solid $main-yellow;
+    margin-bottom: 2rem;
+    display: none;
+    transition: all .4s ease;
+
+    &--is-visible {
+      display: block;
+      padding-top: 4rem;
+    }
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    @mixin atMedium {
+      text-align: left;
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    & > li {
+      padding: 2rem 0;
+
+      @mixin atMedium {
+        display: inline-block;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      @mixin atLarge {
+        padding-left: 5rem;
+
+        &:not(:last-child) {
+          padding-right: 5rem;
+        }
+      }
+    }
+
+    & > li a {
+      display: block;
+      text-decoration: none;
+      color: $main-grey;
+      text-transform: uppercase;
+      transition: all .2s;
+
+      &:hover {
+        color: $link-color;
+      }
+
+      &:active,
+      &:focus {
+        color: $link-color;
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
 }

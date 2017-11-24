@@ -24,7 +24,7 @@
           height: 3.6rem;
           background-color: $main-red;
           position: absolute;
-          top: 2px;
+          top: 3px;
         }
 
         &::before {
