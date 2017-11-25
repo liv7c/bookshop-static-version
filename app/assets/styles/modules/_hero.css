@@ -49,6 +49,13 @@
             background-color: $dark-blue;
           }
         }
+
+        &--green {
+          &::before,
+          &::after {
+            background-color: $main-green;
+          }
+        }
       }
 
       @mixin atMedium {
