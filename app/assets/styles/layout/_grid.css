@@ -1,16 +1,26 @@
 .row {
   @mixin clearfix;
 
+  &--equal-height {
+    @mixin atMedium {
+      display: flex;
+    }
+  }
+
   &--margin-t {
     @mixin atMedium {
       margin-top: 4rem;
     }
   }
 
-  @mixin atSmall {
-    &--gutters {
-      margin-right: -65px;
+  &--b-margin-medium {
+    @mixin atMedium {
+      margin-bottom: 5rem;
     }
+  }
+
+  @mixin atSmall {
+    margin-right: -65px;
 
     &--gutters > div {
       padding-right: 65px;
@@ -23,13 +33,12 @@
   }
 
   @mixin atMedium {
-
-    &--gutters {
-      margin-right: -65px;
-    }
+    margin-right: -65px;
 
     &--gutters > div {
-      padding-right: 65px;
+      &:not(:last-child) {
+        padding-right: 65px;
+      }
     }
 
     &__medium-4 {

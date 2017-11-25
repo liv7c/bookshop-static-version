@@ -5,15 +5,10 @@
     text-transform: uppercase;
     font-size: 1.7rem;
     display: block;
-    width: 90%;
     padding: 1rem 1.5rem;
     text-align: center;
     margin-top: 3rem;
     transition: all .3s;
-
-    @mixin atMedium {
-      width: 50%;
-    }
   }
 
   &:active {
@@ -21,11 +16,33 @@
     top: 1px;
   }
 
+  &--large {
+    width: 90%;
+
+    @mixin atMedium {
+      width: 50%;
+    }
+  }
+
+  &--gallery {
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
+      font-weight: 300;
+      display: inline-block;
+    }
+
+    @mixin atMedium {
+      width: 80%;
+    }
+  }
+
   &--green-out {
     &:link,
     &:visited {
       border: 1px solid $main-green;
       color: $main-green;
+      border-radius: 3px;
     }
 
     &:hover,
@@ -40,6 +57,7 @@
     &:visited {
       border: 1px solid $dark-blue;
       color: $dark-blue;
+      border-radius: 3px;
     }
 
     &:hover,

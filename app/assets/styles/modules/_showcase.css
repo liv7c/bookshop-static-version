@@ -1,0 +1,64 @@
+.showcase {
+  margin-top: 3rem;
+
+  @mixin atMedium {
+    margin-top: 6rem;
+  }
+
+  &__book {
+    overflow: hidden;
+    padding: 1rem .5rem 5rem;
+    box-shadow: 0rem .5rem .6rem rgba(0, 0, 0, .2);
+    position: relative;
+    transition: transform .3s ease-in;
+
+    @mixin atSmall {
+      box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, .2);
+    }
+
+    @mixin atMedium {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__featured_img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__meta {
+    text-align: center;
+    padding: 0 .3rem;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+
+  &__categories {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    font-size: 1.3rem;
+    color: #777;
+    width: 100%;
+    text-align: center;
+
+    &__names {
+      &:not(:last-child) {
+        &::after {
+          content: " | ";
+          display: inline;
+        }
+      }
+    }
+  }
+}

@@ -22,7 +22,6 @@
           content: "";
           width: 3.6rem;
           height: 3.6rem;
-          background-color: $main-red;
           position: absolute;
           top: 3px;
         }
@@ -35,6 +34,20 @@
         &::after {
           margin-left: 3.5rem;
           right: 0;
+        }
+
+        &--red {
+          &::before,
+          &::after {
+            background-color: $main-red;
+          }
+        }
+
+        &--blue {
+          &::before,
+          &::after {
+            background-color: $dark-blue;
+          }
         }
       }
 

@@ -15,7 +15,7 @@ gulp.task('watch', () => {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: "app"
+      baseDir: "app/"
     }
   });
 
@@ -23,7 +23,7 @@ gulp.task('watch', () => {
     gulp.start('scriptsRefresh');
   });
 
-  watch('./app/index.html', () => {
+  watch('./app/**/*.html', () => {
     browserSync.reload();
   });
 
