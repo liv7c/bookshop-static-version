@@ -8,6 +8,7 @@
 @import "layout/_mainFooter";
 @import "layout/_mainNavigation";
 @import "layout/_pageSection";
+@import "modules/_book-detail";
 @import "modules/_button";
 @import "modules/_generic-content-container";
 @import "modules/_hero";

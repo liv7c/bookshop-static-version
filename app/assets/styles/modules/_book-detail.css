@@ -1,0 +1,38 @@
+.book-detail {
+  padding: 4rem 0;
+
+  &__heading {
+    & span {
+      display: block;
+    }
+
+    &--author {
+      font-weight: 300;
+      margin-bottom: .8rem;
+    }
+
+    &--title {
+      font-weight: 400;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__meta {
+    line-height: 1.5;
+    font-size: 1.7rem;
+
+    @mixin atMedium {
+      line-height: 1.7;
+    }
+
+    &--small {
+      font-size: 1.5rem;
+      font-style: italic;
+      margin-top: -1rem;
+    }
+
+    &--italic {
+      font-style: italic;
+    }
+  }
+}

@@ -7,6 +7,10 @@
     }
   }
 
+  &__b-margin-until-medium {
+    margin-bottom: 2rem;
+  }
+
   &--b-margin-medium {
     @mixin atMedium {
       margin-bottom: 5rem;
@@ -46,6 +50,11 @@
     &__medium-7 {
       float: left;
       width: 58.333333%;
+    }
+
+    &__medium-8 {
+      float: left;
+      width: 66.6666666%;
     }
 
     &__b-margin-until-medium {

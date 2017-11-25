@@ -16,6 +16,10 @@
     top: 1px;
   }
 
+  &:hover {
+    opacity: .8;
+  }
+
   &--large {
     width: 90%;
 
