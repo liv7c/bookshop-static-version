@@ -1,12 +1,6 @@
 .row {
   @mixin clearfix;
 
-  &--equal-height {
-    @mixin atMedium {
-      display: flex;
-    }
-  }
-
   &--margin-t {
     @mixin atMedium {
       margin-top: 4rem;
@@ -36,9 +30,7 @@
     margin-right: -65px;
 
     &--gutters > div {
-      &:not(:last-child) {
-        padding-right: 65px;
-      }
+      padding-right: 65px;
     }
 
     &__medium-4 {
@@ -77,5 +69,11 @@
     &__medium-8--smaller {
       width: 63%;
     }
+  }
+
+  &--equal-height {
+    /*@mixin atMedium {
+      display: flex;
+    }*/
   }
 }

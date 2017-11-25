@@ -29,7 +29,10 @@
     &:visited {
       font-size: 1.8rem;
       font-weight: 300;
-      display: inline-block;
+    }
+
+    @mixin atSmall {
+      width: 50%;
     }
 
     @mixin atMedium {
