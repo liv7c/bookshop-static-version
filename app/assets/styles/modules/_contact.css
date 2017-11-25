@@ -1,0 +1,13 @@
+.contact {
+  &__info {
+    h3 {
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    p {
+      margin: 0;
+      color: #444;
+    }
+  }
+}

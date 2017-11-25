@@ -56,6 +56,13 @@
             background-color: $main-green;
           }
         }
+
+        &--yellow {
+          &::before,
+          &::after {
+            background-color: $main-yellow;
+          }
+        }
       }
 
       @mixin atMedium {
