@@ -66,6 +66,21 @@
     }
   }
 
+  &--full-blue {
+    background-color: $dark-blue;
+    width: 60%;
+    color: #FFF;
+    border-radius: 3Px;
+
+    @mixin atSmall {
+      width: 25%;
+    }
+
+    @mixin atMedium {
+      width: 30%;
+    }
+  }
+
   &--center {
     margin-right: auto;
     margin-left: auto;

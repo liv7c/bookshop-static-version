@@ -66,4 +66,17 @@
     }
   }
 
+  &__icon-group {
+    & > img {
+      display: inline-block;
+      width: 5rem;
+      height: auto;
+      padding-right: 2rem;
+      position: relative;
+      top: -3px;
+    }
+    & > h2 {
+      display: inline-block;
+    }
+  }
 }
