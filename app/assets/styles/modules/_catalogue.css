@@ -4,7 +4,7 @@
   &__block {
     margin: 2rem auto;
     padding: 2rem;
-    background-color: rgba(#EDEDED, .5);
+    background-color: rgba(#EDEDED, .8);
 
     @mixin atSmall {
       width: 90%;

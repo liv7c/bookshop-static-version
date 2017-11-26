@@ -20,14 +20,6 @@
     opacity: .8;
   }
 
-  &--large {
-    width: 90%;
-
-    @mixin atMedium {
-      width: 50%;
-    }
-  }
-
   &--gallery {
     &:link,
     &:visited {
