@@ -21,4 +21,12 @@
       padding: 2rem 0;
     }
   }
+
+  &--no-padding {
+    padding: 0;
+  }
+
+  &--m-padding-bottom-until-small {
+    padding-bottom: 4rem;
+  }
 }

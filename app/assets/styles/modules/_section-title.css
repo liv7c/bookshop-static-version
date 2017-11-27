@@ -16,6 +16,14 @@
     }
   }
 
+  &--less-l-spacing {
+    letter-spacing: 2px;
+
+    @mixin atMedium {
+      letter-spacing: 4px;
+    }
+  }
+
   &--small-b-margin {
     @mixin atMedium {
       margin-bottom: 2rem;

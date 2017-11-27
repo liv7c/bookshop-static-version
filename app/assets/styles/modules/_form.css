@@ -1,0 +1,49 @@
+.form {
+  &__group {
+    text-align: center;
+
+    @mixin atMedium {
+      text-align: left;
+    }
+  }
+
+  &__input {
+    font-size: 1.7rem;
+    padding: .5rem .6rem;
+    display: inline-block;
+    width: 70%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1Px solid #dedede;
+
+    @mixin atSmall {
+      width: 50%;
+    }
+
+    @mixin atMedium {
+      width: 70%;
+    }
+  }
+
+  &__submit {
+    font-size: 1.7rem;
+    color: $main-grey;
+    margin-left: -.4rem;
+    padding: .7rem;
+    border: none;
+    background-color: $link-color;
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #FEFEFE;
+    transition: opacity .3s ease;
+    cursor: pointer;
+
+    @mixin atMedium {
+      padding: .6rem;
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
