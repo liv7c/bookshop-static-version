@@ -1,6 +1,6 @@
 .section-title {
   letter-spacing: 3px;
-  margin: 1rem 0;
+  margin: 0rem 0 3rem;
   text-align: center;
 
   @mixin atMedium {
@@ -10,6 +10,10 @@
   &--medium {
     font-size: 2.5rem;
     font-weight: 400;
+
+    @mixin atMedium {
+      text-align: left;
+    }
   }
 
   &--small-b-margin {
@@ -33,10 +37,10 @@
       content: "";
       width: 1.9rem;
       height: 1.9rem;
-      margin-right: 1rem;
+      margin-right: 1.6rem;
 
       @mixin atMedium {
-        margin-right: 2rem;
+        margin-right: 3rem;
         width: 2.8rem;
         height: 2.8rem;
         position: relative;
@@ -58,9 +62,11 @@
     font-weight: 300;
     font-style: italic;
     font-size: 2.1rem;
-    text-align: center;
+    text-align: left;
+    letter-spacing: 3px;
 
     @mixin atMedium {
+      text-align: center;
       font-size: 2.6rem;
       letter-spacing: 5px;
     }

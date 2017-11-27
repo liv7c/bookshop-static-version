@@ -8,7 +8,7 @@
   }
 
   &__b-margin-until-medium {
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
   }
 
   &--b-margin-medium {
@@ -27,9 +27,22 @@
       padding-right: 65px;
     }
 
+    &--gutters-small {
+    margin-right: -30px;
+    }
+
+    &--gutters-small > div {
+      padding-right: 30px;
+    }
+
     &__small-6 {
       float: left;
       width: 50%;
+    }
+
+    &__small-4 {
+      float: left;
+      width: 33.333%;
     }
   }
 

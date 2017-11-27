@@ -13,4 +13,12 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  &--small {
+    padding: 0;
+
+    @mixin atMedium {
+      padding: 2rem 0;
+    }
+  }
 }

@@ -1,7 +1,16 @@
 .book-detail {
   padding: 4rem 0;
 
+  &__title-heading {
+    color: $dark-blue;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: .7rem;
+    letter-spacing: 4px;
+  }
+
   &__heading {
+    margin-top: 1rem;
     & span {
       display: block;
     }
@@ -12,7 +21,7 @@
     }
 
     &--title {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 2.5rem;
     }
   }

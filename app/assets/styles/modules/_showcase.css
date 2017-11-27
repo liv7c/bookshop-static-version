@@ -42,10 +42,20 @@
     }
   }
 
+  &__meta--small-height {
+    @mixin atMedium {
+      min-height: 10rem;
+    }
+  }
+
   &__title {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 0;
+
+    &-btitle {
+      line-height: 1.4;
+    }
 
     & > span {
       display: block;
