@@ -99,9 +99,4 @@
     }
   }
 
-  &--equal-height {
-    /*@mixin atMedium {
-      display: flex;
-    }*/
-  }
 }
